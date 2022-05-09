@@ -317,6 +317,7 @@ li {
   padding: 15px;
   display: block;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 .container .region-footer .footer-container .footer-bottom a:hover {
