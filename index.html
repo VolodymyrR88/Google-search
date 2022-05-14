@@ -15,9 +15,21 @@
             <div class="nav-dropdown">
               <button id="dropBtn" class="dropbuton">Settings</button>
               <div class="dropdown-content" id="dropContent">
-                <ul class="dropdown-list" id="thems">
-                  <li class="list-them-item" id="lightThem">Light Them</li>
-                  <li class="list-them-item" id="darkThem">Dark Them</li>
+                <ul class="dropdown-list">
+                  <li
+                    class="list-them-item"
+                    id="lightThem"
+                    data-color="lightThem"
+                  >
+                    Light Them
+                  </li>
+                  <li
+                    class="list-them-item"
+                    id="darkThem"
+                    data-color="darkThem"
+                  >
+                    Dark Them
+                  </li>
                 </ul>
               </div>
             </div>
@@ -134,7 +146,7 @@
                 >Конфіденційність</a
               >
               <a href="https://policies.google.com/terms?hl=uk&fg=1">Умови</a>
-              <a href="#dropBtn" id="setings">Налаштування</a>
+              <a href="#dropBtn" id="settings">Налаштування</a>
             </div>
           </div>
         </div>
@@ -142,5 +154,6 @@
     </div>
     <script src="js/dropdown.js"></script>
     <script src="js/thems.js"></script>
+    <script src="js/storage.js"></script>
   </body>
 </html>

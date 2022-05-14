@@ -1,21 +1,16 @@
 let themL = document.getElementById("lightThem");
 let themD = document.getElementById("darkThem");
 let bgThem = document.getElementById("page");
+let setElem = document.getElementById("dropContent");
 
-function myBgL() {
+themL.onclick = function myBgL() {
   bgThem.classList.toggle("lightThem");
   bgThem.classList.remove("darkThem");
-}
-
-function myBgD() {
-  bgThem.classList.toggle("darkThem");
-  bgThem.classList.remove("lightThem");
-}
-
-themL.onclick = function () {
-  myBgL();
+  setElem.classList.remove("show-dropContent");
 };
 
-themD.onclick = function () {
-  myBgD();
+themD.onclick = function myBgD() {
+  bgThem.classList.toggle("darkThem");
+  bgThem.classList.remove("lightThem");
+  setElem.classList.remove("show-dropContent");
 };
