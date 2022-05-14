@@ -35,8 +35,8 @@ li {
           position: relative;
           .dropbuton {
             color: #3c4043;
-            font-size: 16px;
-            min-width: 120px;
+            font-size: 14px;
+            min-width: 110px;
             background-color: #f8f9fa;
             border: 1px solid #f8f9fa;
             border-radius: 4px;
@@ -59,11 +59,13 @@ li {
           .dropdown-content {
             display: none;
             position: absolute;
+            text-align: center;
+            margin-top: 5px;
             background-color: #f8f9fa;
             border: 1px solid #eceff1;
             border-radius: 4px;
-            font-size: 16px;
-            min-width: 120px;
+            font-size: 14px;
+            min-width: 110px;
             .dropdown-list {
               .list-them-item {
                 color: #3c4043;
