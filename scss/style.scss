@@ -21,6 +21,7 @@ li {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+
   .container-region-wrapper {
     flex: 1 1 auto;
     margin: 0 20px;
@@ -29,7 +30,66 @@ li {
       margin-bottom: 70px;
       .top-nav {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
+        .nav-dropdown {
+          position: relative;
+          .dropbuton {
+            color: #3c4043;
+            font-size: 16px;
+            min-width: 120px;
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            height: 36px;
+            padding: 0 16px;
+            line-height: 27px;
+            cursor: pointer;
+
+            &:hover {
+              background-color: #f8f9fa;
+              border: 1px solid #dadce0;
+              box-shadow: 0 1px 1px #0000001a;
+              color: #202124;
+            }
+
+            &:focus {
+              border: 1px solid #4285f4;
+            }
+          }
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f8f9fa;
+            border: 1px solid #eceff1;
+            border-radius: 4px;
+            font-size: 16px;
+            min-width: 120px;
+            .dropdown-list {
+              .list-them-item {
+                color: #3c4043;
+                padding: 10px 16px;
+
+                &:hover {
+                  background-color: #f8f9fa;
+                  border: 1px solid #4285f4;
+                  border-radius: 4px;
+                  box-shadow: 0 1px 1px #0000001a;
+                  color: #202124;
+                  cursor: pointer;
+                }
+
+                &:focus {
+                  border: 1px solid #4285f4;
+                }
+              }
+            }
+          }
+
+          .show-dropContent {
+            display: block;
+          }
+        }
+
         .nav-list {
           display: flex;
           .nav-item {
@@ -63,7 +123,6 @@ li {
         display: flex;
         justify-content: center;
         padding: 20px;
-        margin: 0 60px;
         .search-form-content {
           text-align: center;
           .search-form-field {
@@ -74,7 +133,7 @@ li {
             border: 1px solid #dfe1e5;
             border-radius: 24px;
             background: #fff;
-            margin-bottom: 30px;
+            margin-bottom: 11px;
 
             &:hover {
               box-shadow: 0 1px 6px #20212447;
@@ -110,6 +169,7 @@ li {
             }
           }
           .search-form-buttons {
+            padding-top: 18px;
             .search-form-button {
               color: #3c4043;
               font-size: 14px;
@@ -118,7 +178,7 @@ li {
               border: 1px solid #f8f9fa;
               border-radius: 4px;
               height: 36px;
-              margin: 11px 4px;
+              margin-right: 4px;
               padding: 0 16px;
               line-height: 27px;
               cursor: pointer;
@@ -184,4 +244,80 @@ li {
       }
     }
   }
+}
+
+.lightThem {
+  background: #dfc9c9;
+  .container-region-wrapper {
+    .region-search {
+      .search-form-container {
+        .search-form-content {
+          .search-form-field {
+            border: 1px solid #07235c;
+            background: #6f6d6d;
+
+            &:hover {
+              background: #7f5656;
+            }
+            .field-img {
+            }
+            .search-field {
+              padding: 5px;
+              color: #9a4b4b;
+
+              &:focus {
+                border: 1px solid #07235c;
+                box-shadow: 1px 2px 40px #07235c;
+              }
+            }
+            .field-img-container {
+              .field-img-links {
+                .img-link {
+                }
+              }
+            }
+          }
+          .search-form-buttons {
+            .search-form-button {
+              color: #dfc9c9;
+              background-color: #6f6d6d;
+              border: 1px solid #07235c;
+              &:hover {
+                background-color: #7f5656;
+                border: 1px solid #07235c;
+                box-shadow: 1px 2px 40px #07235c;
+                color: #dfc9c9;
+              }
+
+              &:focus {
+                border: 1px solid #4285f4;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .region-footer {
+    background: #6f6d6d;
+
+    .footer-container {
+      color: #dfc9c9;
+      .footer-top {
+      }
+      .footer-bottom {
+        .footer-bottom-up {
+        }
+        .footer-bottom-down {
+        }
+
+        a {
+          color: #dfc9c9;
+        }
+      }
+    }
+  }
+}
+
+.darkThem {
 }

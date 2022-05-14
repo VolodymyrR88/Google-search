@@ -8,10 +8,19 @@
     <title>My search pages</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="page">
       <div class="container-region-wrapper">
         <div class="region-top">
           <nav class="top-nav">
+            <div class="nav-dropdown">
+              <button id="dropBtn" class="dropbuton">Setings</button>
+              <div class="dropdown-content" id="dropContent">
+                <ul class="dropdown-list" id="thems">
+                  <li class="list-them-item" id="lightThem">Light Them</li>
+                  <li class="list-them-item" id="darkThem">Dark Them</li>
+                </ul>
+              </div>
+            </div>
             <ul class="nav-list">
               <li class="nav-item">
                 <a href="pages/images.html" class="nav-item-link"> Images </a>
@@ -37,7 +46,10 @@
 
         <div class="region-search">
           <div class="search-form-container">
-            <form action="" class="search-form-content">
+            <form
+              action="https://google.com/search"
+              class="search-form-content"
+            >
               <div class="search-form-field">
                 <div class="field-img">
                   <img
@@ -47,10 +59,16 @@
                     height="20"
                   />
                 </div>
-                <input type="text" class="search-field" />
+                <input
+                  type="text"
+                  name="q"
+                  id="field"
+                  class="search-field"
+                  autofocus
+                />
                 <div class="field-img-container">
                   <div class="field-img-links">
-                    <a class="img-link" href="">
+                    <a class="img-link" href="#field">
                       <img
                         src="https://emoji-uc.akamaized.net/orig/e6/6686dcfca5cab7aa94edbb9687bc47.png"
                         alt="⌨"
@@ -60,7 +78,7 @@
                     </a>
                   </div>
                   <div class="field-img-links">
-                    <a class="img-link" href="">
+                    <a class="img-link" href="#field">
                       <img
                         src="https://emoji-uc.akamaized.net/orig/44/10d07fa2ab762674f6d796490ec17c.png"
                         alt="🎙"
@@ -76,13 +94,13 @@
                   type="submit"
                   class="search-form-button"
                   value="Google Search"
-                  name=""
+                  name="btnK"
                 />
                 <input
                   type="submit"
                   class="search-form-button"
                   value="I'm lucky"
-                  name=""
+                  name="btnI"
                 />
               </div>
             </form>
@@ -95,19 +113,34 @@
           <div class="footer-top">Україна</div>
           <div class="footer-bottom">
             <div class="footer-bottom-up">
-              <a href="">Про Google</a>
-              <a href="">Реклама</a>
-              <a href="">Для бізнесу</a>
-              <a href="">Як працює Пошук</a>
+              <a
+                href="https://about.google/?utm_source=google-UA&utm_medium=referral&utm_campaign=hp-footer&fg=1"
+                >Про Google</a
+              >
+              <a
+                href="https://www.google.com.ua/intl/uk_ua/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"
+                >Реклама</a
+              >
+              <a
+                href="https://www.google.com.ua/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1"
+                >Для бізнесу</a
+              >
+              <a href="https://google.com/search/howsearchworks/?fg=1"
+                >Як працює Пошук</a
+              >
             </div>
             <div class="footer-bottom-down">
-              <a href="">Конфіденційність</a>
-              <a href="">Умови</a>
-              <a href="">Налаштування</a>
+              <a href="https://policies.google.com/privacy?hl=uk&fg=1"
+                >Конфіденційність</a
+              >
+              <a href="https://policies.google.com/terms?hl=uk&fg=1">Умови</a>
+              <a href="#dropBtn" id="setings">Налаштування</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="js/dropdown.js"></script>
+    <script src="js/thems.js"></script>
   </body>
 </html>
