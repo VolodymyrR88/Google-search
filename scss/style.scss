@@ -178,6 +178,11 @@ li {
               outline: none;
               font-size: 16px;
               color: #000000de;
+
+              //** search-field media query----------------------
+              @media (max-width: 570px) {
+                width: 400px;
+              }
             }
             .field-img-container {
               .field-img-links {
@@ -190,6 +195,11 @@ li {
                 }
               }
               display: flex;
+            }
+
+            //** search-form-field media query----------------------
+            @media (max-width: 570px) {
+              width: 450px;
             }
           }
           .search-form-buttons {
@@ -221,6 +231,11 @@ li {
           }
         }
       }
+    }
+
+    //** container-region-wrapper media query----------------------
+    @media (max-width: 465px) {
+      margin: 0;
     }
   }
 
