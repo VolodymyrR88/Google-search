@@ -1,11 +1,15 @@
-let btnActive = document.getElementById("dropBtn");
-let dropContent = document.getElementById("dropContent");
-let setList = document.getElementById("settings");
+const btnActive = document.getElementById("dropBtn");
+const dropContent = document.getElementById("dropContent");
+const setList = document.getElementById("settings");
+
+function showDrop() {
+  dropContent.classList.toggle("show-dropContent");
+}
 
 btnActive.onclick = function () {
-  dropContent.classList.toggle("show-dropContent");
+  showDrop();
 };
 
 setList.onclick = function () {
-  dropContent.classList.toggle("show-dropContent");
+  showDrop();
 };

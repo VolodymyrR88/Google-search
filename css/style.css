@@ -330,10 +330,10 @@ li {
 }
 
 .container .container-region-wrapper .region-search .search-form-container .search-form-content .search-form-buttons .search-form-button:hover {
-  background-color: #f8f9fa;
+  background-color: #d5dae4;
   border: 1px solid #dadce0;
-  -webkit-box-shadow: 0 1px 1px #0000001a;
-          box-shadow: 0 1px 1px #0000001a;
+  -webkit-box-shadow: 1px 2px 20px #07235c;
+          box-shadow: 1px 2px 20px #07235c;
   color: #202124;
 }
 
@@ -516,17 +516,23 @@ li {
 }
 
 .darkTheme .container-region-wrapper .region-search .search-form-container .search-form-content .search-form-field {
-  border: 1px solid #07235c;
-  background: #6f6d6d;
+  border: 1px solid #202124;
+  background: #202124;
 }
 
 .darkTheme .container-region-wrapper .region-search .search-form-container .search-form-content .search-form-field:hover {
-  background: #7f5656;
+  -webkit-box-shadow: 1px 1px 40px #b7ad13;
+          box-shadow: 1px 1px 40px #b7ad13;
+  background-color: #202124;
+  border-bottom: 2px solid #07235c;
+  border-left: 2px solid #07235c;
 }
 
 .darkTheme .container-region-wrapper .region-search .search-form-container .search-form-content .search-form-field .search-field {
+  background: -webkit-gradient(linear, left top, right top, from(#4285f4), color-stop(#ea4335), color-stop(#fbbc05), color-stop(#4285f4), color-stop(#34a853), to(#ea4335));
+  background: linear-gradient(to right, #4285f4, #ea4335, #fbbc05, #4285f4, #34a853, #ea4335);
   padding: 5px;
-  color: #9a4b4b;
+  color: #fff;
 }
 
 .darkTheme .container-region-wrapper .region-search .search-form-container .search-form-content .search-form-field .search-field:focus {
@@ -537,30 +543,40 @@ li {
 
 .darkTheme .container-region-wrapper .region-search .search-form-container .search-form-content .search-form-buttons .search-form-button {
   color: #fff;
-  background-color: #8f8585;
-  border: 1px solid #fbbc05;
+  background-color: #202124;
+  border: 1px solid #202124;
+  border-radius: 0;
 }
 
 .darkTheme .container-region-wrapper .region-search .search-form-container .search-form-content .search-form-buttons .search-form-button:hover {
-  background-color: #7f5656;
-  border: 1px solid #fff;
+  background-color: #202124;
+  border-bottom: 1px solid #b7ad13;
+  border-left: 1px solid #b7ad13;
   -webkit-box-shadow: 1px 1px 40px #b7ad13;
           box-shadow: 1px 1px 40px #b7ad13;
   color: #dfc9c9;
 }
 
 .darkTheme .container-region-wrapper .region-search .search-form-container .search-form-content .search-form-buttons .search-form-button:focus {
-  border: 1px solid #ded32a;
+  border: none;
 }
 
 .darkTheme .region-footer {
-  background: #6f6d6d;
+  background: #202124;
 }
 
 .darkTheme .region-footer .footer-container {
-  color: #dfc9c9;
+  color: #fff;
 }
 
 .darkTheme .region-footer .footer-container .footer-bottom a {
+  color: #fff;
+}
+
+.darkTheme .region-footer .footer-container .footer-bottom a:hover {
   color: #dfc9c9;
+  text-decoration: none;
+  border-left: 1px solid #ded32a;
+  border-right: 1px solid #ded32a;
+  border-radius: 30%;
 }

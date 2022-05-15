@@ -1,26 +1,26 @@
 const themeL = document.getElementById("lightTheme");
 const themeD = document.getElementById("darkTheme");
 const themeDef = document.getElementById("defaultTheme");
-const bgTheme = document.getElementById("page");
-const setElem = document.getElementById("dropContent");
+const pageId = document.getElementById("page");
+const dropContentList = document.getElementById("dropContent");
 
 themeL.onclick = function myBgL() {
-  // bgTheme.classList.add("lightTheme");
-  // bgTheme.classList.remove("darkTheme");
-  // bgTheme.classList.remove("defaultTheme");
-  setElem.classList.remove("show-dropContent");
+  // pageId.classList.add("lightTheme");
+  // pageId.classList.remove("darkTheme");
+  // pageId.classList.remove("defaultTheme");
+  dropContentList.classList.remove("show-dropContent");
 };
 
 themeD.onclick = function myBgD() {
-  // bgTheme.classList.toggle("darkTheme");
-  // bgTheme.classList.remove("lightTheme");
-  // bgTheme.classList.remove("defaultTheme");
-  setElem.classList.remove("show-dropContent");
+  // pageId.classList.toggle("darkTheme");
+  // pageId.classList.remove("lightTheme");
+  // pageId.classList.remove("defaultTheme");
+  dropContentList.classList.remove("show-dropContent");
 };
 
 themeDef.onclick = function myBgDef() {
-  // bgTheme.classList.toggle("defaultThem");
-  // bgTheme.classList.remove("darkTheme");
-  // bgTheme.classList.remove("lightTheme");
-  setElem.classList.remove("show-dropContent");
+  // pageId.classList.toggle("defaultThem");
+  // pageId.classList.remove("darkTheme");
+  // pageId.classList.remove("lightTheme");
+  dropContentList.classList.remove("show-dropContent");
 };
