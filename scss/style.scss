@@ -34,11 +34,11 @@ li {
         .nav-dropdown {
           position: relative;
           .dropbuton {
-            color: #3c4043;
+            color: #fff;
             font-size: 14px;
             min-width: 110px;
-            background-color: #f8f9fa;
-            border: 1px solid #f8f9fa;
+            background-color: #8f8585;
+            border: 1px solid #fbbc05;
             border-radius: 4px;
             height: 36px;
             padding: 0 16px;
@@ -46,14 +46,13 @@ li {
             cursor: pointer;
 
             &:hover {
-              background-color: #f8f9fa;
+              background-color: #8f8585;
               border: 1px solid #dadce0;
-              box-shadow: 0 1px 1px #0000001a;
-              color: #202124;
+              box-shadow: 1px 2px 40px #07235c;
             }
 
             &:focus {
-              border: 1px solid #4285f4;
+              border: 1px solid #ded32a;
             }
           }
           .dropdown-content {
@@ -66,17 +65,37 @@ li {
             border-radius: 4px;
             font-size: 14px;
             min-width: 110px;
+            background: #b7b2b2;
+
             .dropdown-list {
-              .list-them-item {
-                color: #3c4043;
-                padding: 10px 16px;
+              #lightTheme {
+                &:hover {
+                  color: #dfc9c9;
+                }
+              }
+
+              #darkTheme {
+                &:hover {
+                  color: #333;
+                }
+              }
+
+              #defaultTheme {
+                &:hover {
+                  color: #fff;
+                }
+              }
+
+              .list-theme-item {
+                color: rgb(239, 234, 234);
+                padding: 10px;
+                margin: 2px 0;
 
                 &:hover {
-                  background-color: #f8f9fa;
-                  border: 1px solid #4285f4;
+                  // background-color: #f8f9fa;
+                  border-bottom: 1px solid #ded32a;
                   border-radius: 4px;
                   box-shadow: 0 1px 1px #0000001a;
-                  color: #202124;
                   cursor: pointer;
                 }
 
@@ -97,12 +116,15 @@ li {
           .nav-item {
             padding-left: 10px;
 
-            &:hover {
-              text-decoration: underline;
-            }
             .nav-item-link {
               font-size: 13px;
               padding: 5px;
+
+              &:hover {
+                box-shadow: 1px 2px 40px #07235c;
+                background: #d5dae4;
+                border-radius: 25px;
+              }
             }
           }
         }
@@ -193,7 +215,7 @@ li {
               }
 
               &:focus {
-                border: 1px solid #4285f4;
+                border: 1px solid #fbbc05;
               }
             }
           }
@@ -248,7 +270,7 @@ li {
   }
 }
 
-.lightThem {
+.lightTheme {
   background: #dfc9c9;
   .container-region-wrapper {
     .region-search {
@@ -321,5 +343,5 @@ li {
   }
 }
 
-.darkThem {
+.darkTheme {
 }

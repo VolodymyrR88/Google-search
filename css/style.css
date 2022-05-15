@@ -134,11 +134,11 @@ li {
 }
 
 .container .container-region-wrapper .region-top .top-nav .nav-dropdown .dropbuton {
-  color: #3c4043;
+  color: #fff;
   font-size: 14px;
   min-width: 110px;
-  background-color: #f8f9fa;
-  border: 1px solid #f8f9fa;
+  background-color: #8f8585;
+  border: 1px solid #fbbc05;
   border-radius: 4px;
   height: 36px;
   padding: 0 16px;
@@ -147,15 +147,14 @@ li {
 }
 
 .container .container-region-wrapper .region-top .top-nav .nav-dropdown .dropbuton:hover {
-  background-color: #f8f9fa;
+  background-color: #8f8585;
   border: 1px solid #dadce0;
-  -webkit-box-shadow: 0 1px 1px #0000001a;
-          box-shadow: 0 1px 1px #0000001a;
-  color: #202124;
+  -webkit-box-shadow: 1px 2px 40px #07235c;
+          box-shadow: 1px 2px 40px #07235c;
 }
 
 .container .container-region-wrapper .region-top .top-nav .nav-dropdown .dropbuton:focus {
-  border: 1px solid #4285f4;
+  border: 1px solid #ded32a;
 }
 
 .container .container-region-wrapper .region-top .top-nav .nav-dropdown .dropdown-content {
@@ -168,24 +167,36 @@ li {
   border-radius: 4px;
   font-size: 14px;
   min-width: 110px;
+  background: #b7b2b2;
 }
 
-.container .container-region-wrapper .region-top .top-nav .nav-dropdown .dropdown-content .dropdown-list .list-them-item {
-  color: #3c4043;
-  padding: 10px 16px;
+.container .container-region-wrapper .region-top .top-nav .nav-dropdown .dropdown-content .dropdown-list #lightTheme:hover {
+  color: #dfc9c9;
 }
 
-.container .container-region-wrapper .region-top .top-nav .nav-dropdown .dropdown-content .dropdown-list .list-them-item:hover {
-  background-color: #f8f9fa;
-  border: 1px solid #4285f4;
+.container .container-region-wrapper .region-top .top-nav .nav-dropdown .dropdown-content .dropdown-list #darkTheme:hover {
+  color: #333;
+}
+
+.container .container-region-wrapper .region-top .top-nav .nav-dropdown .dropdown-content .dropdown-list #defaultTheme:hover {
+  color: #fff;
+}
+
+.container .container-region-wrapper .region-top .top-nav .nav-dropdown .dropdown-content .dropdown-list .list-theme-item {
+  color: #efeaea;
+  padding: 10px;
+  margin: 2px 0;
+}
+
+.container .container-region-wrapper .region-top .top-nav .nav-dropdown .dropdown-content .dropdown-list .list-theme-item:hover {
+  border-bottom: 1px solid #ded32a;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px #0000001a;
           box-shadow: 0 1px 1px #0000001a;
-  color: #202124;
   cursor: pointer;
 }
 
-.container .container-region-wrapper .region-top .top-nav .nav-dropdown .dropdown-content .dropdown-list .list-them-item:focus {
+.container .container-region-wrapper .region-top .top-nav .nav-dropdown .dropdown-content .dropdown-list .list-theme-item:focus {
   border: 1px solid #4285f4;
 }
 
@@ -203,13 +214,16 @@ li {
   padding-left: 10px;
 }
 
-.container .container-region-wrapper .region-top .top-nav .nav-list .nav-item:hover {
-  text-decoration: underline;
-}
-
 .container .container-region-wrapper .region-top .top-nav .nav-list .nav-item .nav-item-link {
   font-size: 13px;
   padding: 5px;
+}
+
+.container .container-region-wrapper .region-top .top-nav .nav-list .nav-item .nav-item-link:hover {
+  -webkit-box-shadow: 1px 2px 40px #07235c;
+          box-shadow: 1px 2px 40px #07235c;
+  background: #d5dae4;
+  border-radius: 25px;
 }
 
 .container .container-region-wrapper .region-title {
@@ -324,7 +338,7 @@ li {
 }
 
 .container .container-region-wrapper .region-search .search-form-container .search-form-content .search-form-buttons .search-form-button:focus {
-  border: 1px solid #4285f4;
+  border: 1px solid #fbbc05;
 }
 
 .container .region-footer {
@@ -403,37 +417,37 @@ li {
   }
 }
 
-.lightThem {
+.lightTheme {
   background: #dfc9c9;
 }
 
-.lightThem .container-region-wrapper .region-search .search-form-container .search-form-content .search-form-field {
+.lightTheme .container-region-wrapper .region-search .search-form-container .search-form-content .search-form-field {
   border: 1px solid #07235c;
   background: #6f6d6d;
 }
 
-.lightThem .container-region-wrapper .region-search .search-form-container .search-form-content .search-form-field:hover {
+.lightTheme .container-region-wrapper .region-search .search-form-container .search-form-content .search-form-field:hover {
   background: #7f5656;
 }
 
-.lightThem .container-region-wrapper .region-search .search-form-container .search-form-content .search-form-field .search-field {
+.lightTheme .container-region-wrapper .region-search .search-form-container .search-form-content .search-form-field .search-field {
   padding: 5px;
   color: #9a4b4b;
 }
 
-.lightThem .container-region-wrapper .region-search .search-form-container .search-form-content .search-form-field .search-field:focus {
+.lightTheme .container-region-wrapper .region-search .search-form-container .search-form-content .search-form-field .search-field:focus {
   border: 1px solid #07235c;
   -webkit-box-shadow: 1px 2px 40px #07235c;
           box-shadow: 1px 2px 40px #07235c;
 }
 
-.lightThem .container-region-wrapper .region-search .search-form-container .search-form-content .search-form-buttons .search-form-button {
+.lightTheme .container-region-wrapper .region-search .search-form-container .search-form-content .search-form-buttons .search-form-button {
   color: #dfc9c9;
   background-color: #6f6d6d;
   border: 1px solid #07235c;
 }
 
-.lightThem .container-region-wrapper .region-search .search-form-container .search-form-content .search-form-buttons .search-form-button:hover {
+.lightTheme .container-region-wrapper .region-search .search-form-container .search-form-content .search-form-buttons .search-form-button:hover {
   background-color: #7f5656;
   border: 1px solid #07235c;
   -webkit-box-shadow: 1px 2px 40px #07235c;
@@ -441,18 +455,18 @@ li {
   color: #dfc9c9;
 }
 
-.lightThem .container-region-wrapper .region-search .search-form-container .search-form-content .search-form-buttons .search-form-button:focus {
+.lightTheme .container-region-wrapper .region-search .search-form-container .search-form-content .search-form-buttons .search-form-button:focus {
   border: 1px solid #ded32a;
 }
 
-.lightThem .region-footer {
+.lightTheme .region-footer {
   background: #6f6d6d;
 }
 
-.lightThem .region-footer .footer-container {
+.lightTheme .region-footer .footer-container {
   color: #dfc9c9;
 }
 
-.lightThem .region-footer .footer-container .footer-bottom a {
+.lightTheme .region-footer .footer-container .footer-bottom a {
   color: #dfc9c9;
 }
