@@ -251,6 +251,7 @@ li {
   .container .container-region-wrapper .region-top .top-nav .nav-dropdown .dropdown-content .dropdown-list .list-theme-item {
     margin: 0;
     padding: 5px;
+    width: calc(309px / 3);
   }
 }
 
