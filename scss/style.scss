@@ -36,7 +36,7 @@ li {
           .dropbuton {
             color: #fff;
             font-size: 14px;
-            min-width: 110px;
+            min-width: 126px;
             background-color: #8f8585;
             border: 1px solid #fbbc05;
             border-radius: 4px;
@@ -56,7 +56,7 @@ li {
             }
 
             //** dropbuton media query----------------------
-            @media (max-width: 570px) {
+            @media (max-width: 575px) {
               height: 30px;
             }
           }
@@ -73,6 +73,7 @@ li {
             background: #b7b2b2;
 
             .dropdown-list {
+              width: 124px;
               #lightTheme {
                 &:hover {
                   color: #dfc9c9;
@@ -80,7 +81,7 @@ li {
                 }
 
                 //** #lightTheme media query----------------------
-                @media (max-width: 570px) {
+                @media (max-width: 575px) {
                   border-right: 2px solid #dfc9c9;
                 }
               }
@@ -92,7 +93,7 @@ li {
                 }
 
                 //** #darkTheme media query----------------------
-                @media (max-width: 570px) {
+                @media (max-width: 575px) {
                   border-right: 2px solid #333;
                 }
               }
@@ -104,8 +105,9 @@ li {
                 }
 
                 //** #defaultTheme media query----------------------
-                @media (max-width: 570px) {
+                @media (max-width: 575px) {
                   border-right: 2px solid #fff;
+                  height: auto;
                 }
               }
 
@@ -113,6 +115,9 @@ li {
                 color: rgb(239, 234, 234);
                 padding: 10px;
                 margin: 2px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
 
                 &:hover {
                   border-bottom: 1px solid #ded32a;
@@ -121,7 +126,7 @@ li {
                   cursor: pointer;
 
                   //** list-theme-item:hover media query----------------------
-                  @media (max-width: 570px) {
+                  @media (max-width: 575px) {
                     border-radius: 30%;
                   }
                 }
@@ -131,23 +136,17 @@ li {
                 }
 
                 //** list-theme-item media query----------------------
-                @media (max-width: 570px) {
-                  margin: 0 5px;
+                @media (max-width: 575px) {
+                  margin: 0;
                   padding: 5px;
-                  width: 110px;
-                }
-
-                @media (max-width: 465px) {
-                  // padding: 5px 0;
-                  // margin: 0;
-                  width: 90px;
-                  font-size: 14px;
                 }
               }
 
               //** dropdown-list media query----------------------
-              @media (max-width: 570px) {
+              @media (max-width: 575px) {
                 display: flex;
+                height: 27px;
+                width: 307px;
               }
             }
           }
@@ -173,6 +172,11 @@ li {
               }
             }
           }
+        }
+
+        //** 'top-nav' media query----------------------
+        @media (max-width: 465px) {
+          align-items: center;
         }
       }
     }
@@ -297,13 +301,15 @@ li {
       color: #70757a;
       margin: 0 20px;
       .footer-top {
-        padding: 15px 15px;
-        border-bottom: 1px solid #dadce0;
+        height: 54px;
+        display: flex;
+        align-items: center;
         font-size: 15px;
+        border-bottom: 1px solid #dadce0;
+        padding: 15px 15px;
 
         //** footer-top media query----------------------
         @media (max-width: 465px) {
-          text-align: center;
         }
       }
       .footer-bottom {
@@ -322,10 +328,21 @@ li {
         }
         .footer-bottom-down {
           display: flex;
+          align-items: center;
+
+          #settings {
+            display: flex;
+            align-items: center;
+
+            img {
+              padding-left: 5px;
+            }
+          }
 
           //** footer-bottom-down media query----------------------
           @media (max-width: 465px) {
             flex-direction: column;
+            align-items: flex-start;
           }
         }
 
@@ -343,7 +360,7 @@ li {
           //** footer-bottom  'a' media query----------------------
           @media (max-width: 465px) {
             font-size: 13px;
-            padding: 5px;
+            padding: 10px;
           }
         }
 
@@ -355,7 +372,40 @@ li {
 
         @media (max-width: 465px) {
           flex-direction: row;
-          justify-content: space-evenly;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
+
+.defaultTheme {
+  .region-footer {
+    .footer-container {
+      .footer-top {
+        position: relative;
+
+        .footer-logo-def {
+          position: absolute;
+          right: 0;
+        }
+
+        .footer-logo-light {
+          display: none;
+        }
+
+        .footer-logo-dark {
+          display: none;
+        }
+
+        // .show-logo {
+        //   display: block;
+        // }
+      }
+      .footer-bottom {
+        .footer-bottom-up {
+        }
+        .footer-bottom-down {
         }
       }
     }
@@ -465,6 +515,24 @@ li {
     .footer-container {
       color: #dfc9c9;
       .footer-top {
+        position: relative;
+
+        .footer-logo-def {
+          display: none;
+        }
+
+        .footer-logo-light {
+          position: absolute;
+          right: 0;
+        }
+
+        .footer-logo-dark {
+          display: none;
+        }
+
+        // .show-logo {
+        //   display: block;
+        // }
       }
       .footer-bottom {
         .footer-bottom-up {
@@ -611,6 +679,29 @@ li {
     .footer-container {
       color: #fff;
       .footer-top {
+        position: relative;
+
+        .footer-logo-def {
+          display: none;
+        }
+
+        .footer-logo-light {
+          display: none;
+        }
+
+        .footer-logo-dark {
+          position: absolute;
+          right: 0;
+
+          img {
+            background: #8f8585;
+            border-left: 1px solid #4285f4;
+            border-right: 1px solid #fbbc05;
+            border-top: 1px solid #ea4335;
+            border-bottom: 1px solid #34a853;
+            box-shadow: 1px 1px 40px #ded32a;
+          }
+        }
       }
       .footer-bottom {
         .footer-bottom-up {

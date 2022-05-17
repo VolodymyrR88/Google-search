@@ -1,16 +1,23 @@
-const element = document.querySelectorAll(".list-theme-item");
-const list = [];
+// ? theme ==========================================================
+const themeElements = document.querySelectorAll(".list-theme-item");
+const themeArray = [];
+const page = document.getElementById("page");
+// * ===================
 
-const setTheme = document.getElementById("page");
+// TODO: theme =========
+if (localStorage.getItem("theme") == null) {
+  page.classList.add("defaultTheme");
+} else {
+  page.classList.add(localStorage.getItem("theme"));
+}
 
-setTheme.classList.add(localStorage.getItem("theme"));
-
-element.forEach((e) => {
-  list.push(e.getAttribute("data-color"));
+themeElements.forEach((e) => {
+  themeArray.push(e.getAttribute("data-color"));
 
   e.addEventListener("click", function () {
-    setTheme.classList.remove(...list);
-    setTheme.classList.add(this.getAttribute("data-color"));
+    page.classList.remove(...themeArray);
+    page.classList.add(this.getAttribute("data-color"));
     localStorage.setItem("theme", this.getAttribute("data-color"));
   });
 });
+// ! ================================================================
