@@ -57,7 +57,7 @@ li {
 
             //** dropbuton media query----------------------
             @media (max-width: 575px) {
-              height: 30px;
+              height: 31px;
             }
           }
           .dropdown-content {
@@ -308,10 +308,6 @@ li {
         font-size: 15px;
         border-bottom: 1px solid #dadce0;
         padding: 15px 15px;
-
-        //** footer-top media query----------------------
-        @media (max-width: 465px) {
-        }
       }
       .footer-bottom {
         display: flex;
@@ -415,11 +411,17 @@ li {
 
 .lightTheme {
   background: #dfc9c9;
+  font-family: "Kosugi Maru", sans-serif;
+
+  li {
+    font-size: 16px;
+  }
   .container-region-wrapper {
     .region-top {
       .top-nav {
         .nav-dropdown {
           .dropbuton {
+            font-size: 16px;
           }
           .dropdown-content {
             .dropdown-list {
@@ -445,6 +447,7 @@ li {
           .nav-item {
             .nav-item-link {
               color: #6f6d6d;
+              font-size: 15px;
 
               &:hover {
                 background-color: #7f5656;
@@ -550,6 +553,8 @@ li {
 }
 
 .darkTheme {
+  font-family: "Reggae One", cursive;
+
   background: #202124;
   .container-region-wrapper {
     .region-top {
@@ -572,6 +577,10 @@ li {
               }
 
               .list-theme-item {
+                //** list-theme-item media query----------------------
+                @media (max-width: 575px) {
+                  font-size: 13px;
+                }
               }
             }
           }
@@ -706,8 +715,17 @@ li {
       }
       .footer-bottom {
         .footer-bottom-up {
+          //** footer-bottom-up media query----------------------
+          @media (max-width: 485px) {
+            flex-direction: column;
+          }
         }
         .footer-bottom-down {
+          //** footer-bottom-down media query----------------------
+          @media (max-width: 485px) {
+            flex-direction: column;
+            align-items: flex-start;
+          }
         }
 
         a {
@@ -720,6 +738,18 @@ li {
             border-right: 1px solid #ded32a;
             border-radius: 30%;
           }
+        }
+
+        img {
+          @media (max-width: 465px) {
+            width: 30px;
+          }
+        }
+
+        //** footer-bottom media query
+        @media (max-width: 485px) {
+          flex-direction: row;
+          justify-content: space-between;
         }
       }
     }

@@ -1,7 +1,7 @@
 const themeL = document.getElementById("lightTheme");
 const themeD = document.getElementById("darkTheme");
 const themeDef = document.getElementById("defaultTheme");
-const pageId = document.getElementById("page");
+// const pageId = document.getElementById("page");
 const dropContentList = document.getElementById("dropContent");
 // const footerLogoDef = document.getElementById("footerLogoDef");
 // const footerLogoL = document.getElementById("footerLogoLight");
