@@ -4,7 +4,218 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Advanced</title>
+    <link rel="stylesheet" href="../css/advanced.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap"
+      rel="stylesheet"
+    />
+    <title>My search pages</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container" id="page">
+      <div class="container-region-wrapper">
+        <div class="region-top">
+          <nav class="top-nav">
+            <div class="nav-dropdown">
+              <button id="dropBtn" class="dropbuton">
+                Settings
+                <img
+                  src="../img/icon/google icon sets 32x32.png"
+                  alt="settings"
+                  width="20"
+                />
+              </button>
+              <div class="dropdown-content" id="dropContent">
+                <ul class="dropdown-list">
+                  <li
+                    class="list-theme-item"
+                    id="lightTheme"
+                    data-color="lightTheme"
+                  >
+                    Light Theme
+                    <!-- <img
+                      src="img/icon/grey-purple Google browser icon 32x32.png"
+                      alt="lightTheme"
+                      width="20"
+                    /> -->
+                  </li>
+                  <li
+                    class="list-theme-item"
+                    id="darkTheme"
+                    data-color="darkTheme"
+                  >
+                    Dark Theme
+                    <!-- <img
+                      src="img/icon/black-gold core Google  icon 32x32.png"
+                      alt="darkTheme"
+                      width="20"
+                    /> -->
+                  </li>
+                  <li
+                    class="list-theme-item"
+                    id="defaultTheme"
+                    data-color="defaultTheme"
+                  >
+                    Default
+                    <!-- <img
+                      src="img/icon/Browser, Chrome, Google icon 32x32.png"
+                      alt="defaultTheme"
+                      width="32"
+                    /> -->
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="../index.html" class="nav-item-link">
+                  Home
+                  <img
+                    src="../img/icon/home icon 32x32.png"
+                    alt="Home page"
+                    width="20"
+                  />
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <top-title>
+            <p class="title">Advanced Search</p>
+          </top-title>
+        </div>
+
+        <div class="region-title">
+          <div class="title-container">
+            <img
+              src="../img/logo/Google_Images_logo.png"
+              alt="Biglogo"
+              class="title-image"
+              width="272"
+              height="92"
+            />
+          </div>
+        </div>
+
+        <div class="region-search">
+          <div class="search-form-container">
+            <form
+              action="https://www.google.com/search"
+              class="search-form-content"
+              name="q"
+            >
+              <div class="search-form-field">
+                <div class="field-img">
+                  <img
+                    src="https://emoji-uc.akamaized.net/orig/36/42dfd89cc30f82fc76ebe7fd1ef1fb.png"
+                    alt="🔍"
+                    width="20"
+                    height="20"
+                  />
+                </div>
+                <input
+                  type="text"
+                  name="q"
+                  id="field"
+                  class="search-field"
+                  autofocus
+                />
+                <div class="field-img-container">
+                  <div class="field-img-links">
+                    <a class="img-link" href="#field">
+                      <img
+                        src="https://emoji-uc.akamaized.net/orig/e6/6686dcfca5cab7aa94edbb9687bc47.png"
+                        alt="⌨"
+                        width="24"
+                        height="24"
+                      />
+                    </a>
+                  </div>
+                  <div class="field-img-links">
+                    <a class="img-link" href="#field">
+                      <img
+                        src="https://emoji-uc.akamaized.net/orig/44/10d07fa2ab762674f6d796490ec17c.png"
+                        alt="🎙"
+                        width="24"
+                        height="24"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="search-form-buttons">
+                <input type="hidden" name="tbm" value="isch" />
+                <input
+                  type="submit"
+                  class="search-form-button"
+                  value="Images search"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="region-footer" id="pageFooter">
+        <div class="footer-container">
+          <div class="footer-top">
+            <p>Україна</p>
+            <div id="footerLogoDef" class="footer-logo-def">
+              <img
+                src="/img/icon/media google, icon 48x48.png"
+                alt="footer-logo"
+              />
+            </div>
+            <div id="footerLogoLight" class="footer-logo-light">
+              <img
+                src="/img/icon/light google icon 48x48.png"
+                alt="footer-logo"
+              />
+            </div>
+            <div id="footerLogoDark" class="footer-logo-dark">
+              <img src="/img/icon/g, logo,  icon 48x48.png" alt="footer-logo" />
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-bottom-up">
+              <a
+                href="https://about.google/?utm_source=google-UA&utm_medium=referral&utm_campaign=hp-footer&fg=1"
+                >Про Google</a
+              >
+              <a
+                href="https://www.google.com.ua/intl/uk_ua/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"
+                >Реклама</a
+              >
+              <a
+                href="https://www.google.com.ua/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1"
+                >Для бізнесу</a
+              >
+              <a href="https://google.com/search/howsearchworks/?fg=1"
+                >Як працює Пошук</a
+              >
+            </div>
+            <div class="footer-bottom-down">
+              <a href="https://policies.google.com/privacy?hl=uk&fg=1"
+                >Конфіденційність</a
+              >
+              <a href="https://policies.google.com/terms?hl=uk&fg=1">Умови</a>
+              <a href="#dropBtn" id="settings"
+                >Налаштування
+                <img src="../img/icon/Webmaster icon 32x32.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/dropdown.js"></script>
+    <script src="../js/themes.js"></script>
+    <script src="../js/localstorage.js"></script>
+    <!-- <script src="../js/cookie.js"></script> -->
+  </body>
 </html>
