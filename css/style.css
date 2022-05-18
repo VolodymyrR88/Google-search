@@ -369,6 +369,18 @@ li {
   color: #000000de;
 }
 
+@media (max-width: 570px) {
+  .container .container-region-wrapper .region-search .search-form-container .search-form-content .search-form-field .search-field {
+    width: 337px;
+  }
+}
+
+@media (max-width: 465px) {
+  .container .container-region-wrapper .region-search .search-form-container .search-form-content .search-form-field .search-field {
+    width: 234px;
+  }
+}
+
 .container .container-region-wrapper .region-search .search-form-container .search-form-content .search-form-field .field-img-container {
   display: -webkit-box;
   display: -ms-flexbox;
