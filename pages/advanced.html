@@ -21,7 +21,7 @@
     <div class="container" id="page">
       <div class="container-region-wrapper">
         <div class="region-top">
-          <nav class="top-nav">
+          <nav class="top-up">
             <div class="nav-dropdown">
               <button id="dropBtn" class="dropbuton">
                 Settings
@@ -85,82 +85,110 @@
               </li>
             </ul>
           </nav>
-          <top-title>
-            <p class="title">Advanced Search</p>
-          </top-title>
-        </div>
-
-        <div class="region-title">
-          <div class="title-container">
-            <img
-              src="../img/logo/Google_Images_logo.png"
-              alt="Biglogo"
-              class="title-image"
-              width="272"
-              height="92"
-            />
+          <div class="top-down">
+            <p class="top-down-title">Advanced Search</p>
           </div>
         </div>
 
-        <div class="region-search">
-          <div class="search-form-container">
+        <div class="region-content">
+          <div class="content-search-wrapper">
             <form
               action="https://www.google.com/search"
               class="search-form-content"
               name="q"
             >
-              <div class="search-form-field">
-                <div class="field-img">
-                  <img
-                    src="https://emoji-uc.akamaized.net/orig/36/42dfd89cc30f82fc76ebe7fd1ef1fb.png"
-                    alt="🔍"
-                    width="20"
-                    height="20"
-                  />
+              <div class="search-form-column-left" id="sfColumn1">
+                <p class="column-title">Find pages</p>
+                <div class="column-row-wrapper">
+                  <div class="row-text">with the words:</div>
                 </div>
-                <input
-                  type="text"
-                  name="q"
-                  id="field"
-                  class="search-field"
-                  autofocus
-                />
-                <div class="field-img-container">
-                  <div class="field-img-links">
-                    <a class="img-link" href="#field">
-                      <img
-                        src="https://emoji-uc.akamaized.net/orig/e6/6686dcfca5cab7aa94edbb9687bc47.png"
-                        alt="⌨"
-                        width="24"
-                        height="24"
-                      />
-                    </a>
-                  </div>
-                  <div class="field-img-links">
-                    <a class="img-link" href="#field">
-                      <img
-                        src="https://emoji-uc.akamaized.net/orig/44/10d07fa2ab762674f6d796490ec17c.png"
-                        alt="🎙"
-                        width="24"
-                        height="24"
-                      />
-                    </a>
-                  </div>
+                <div class="column-row-wrapper">
+                  <div class="row-text">with the phrase:</div>
+                </div>
+                <div class="column-row-wrapper">
+                  <div class="row-text">with any of these words:</div>
+                </div>
+                <div class="column-row-wrapper">
+                  <div class="row-text">without words:</div>
+                </div>
+                <div class="column-row-wrapper">
+                  <div class="row-text">with a range of numbers:</div>
                 </div>
               </div>
-              <div class="search-form-buttons">
-                <input type="hidden" name="tbm" value="isch" />
-                <input
-                  type="submit"
-                  class="search-form-button"
-                  value="Images search"
-                />
+              <div class="search-form-column-middle" id="sfColumn2">
+                <div class="search-form-fields">
+                  <div id="clearField"></div>
+                  <div class="search-field">
+                    <input type="text" name="q" autofocus />
+                  </div>
+                  <div class="search-field">
+                    <input type="text" name="q" />
+                  </div>
+                  <div class="search-field">
+                    <input type="text" name="q" />
+                  </div>
+                  <div class="search-field">
+                    <input type="text" name="q" />
+                  </div>
+                  <div class="form-field-bottom">
+                    <div class="search-field">
+                      <input type="text" name="q" />
+                    </div>
+                    <div class="field-bottom-between">
+                      <p class="column-text">-</p>
+                    </div>
+                    <div class="search-field">
+                      <input type="text" name="q" />
+                    </div>
+                  </div>
+                </div>
+                <div class="search-form-buttons">
+                  <input type="hidden" name="tbm" value="isch" />
+                  <input
+                    type="submit"
+                    class="search-form-button"
+                    value="Images search"
+                  />
+                </div>
+              </div>
+              <div class="search-form-column-right" id="sfColumn3">
+                <p class="column-title">How it works in organic search</p>
+                <div class="column-wrapper">
+                  <div class="column-row-wrapper">
+                    <div class="row-text row-1">
+                      Enter keywords: <i>Ivan Fedorovich Kruzenshtern</i>
+                    </div>
+                  </div>
+                  <div class="column-row-wrapper">
+                    <div class="row-text row-2">
+                      Enclose the phrase in quotation marks:
+                      <i>"book Ivan Kruzenshtern"</i>
+                    </div>
+                  </div>
+                  <div class="column-row-wrapper">
+                    <div class="row-text row-3">
+                      Insert an OR operator between the words:
+                      <i>man OR steamboat</i>
+                    </div>
+                  </div>
+                  <div class="column-row-wrapper">
+                    <div class="row-text row-4">
+                      Put a minus sign before the words:
+                      <i>-steamboat, - "book about the steamboat"</i>
+                    </div>
+                  </div>
+                  <div class="column-row-wrapper">
+                    <div class="row-text row-5">
+                      Insert two dots between the numbers and specify the unit
+                      of measurement: <i>300..1000 rubles, 1812..1846</i>
+                    </div>
+                  </div>
+                </div>
               </div>
             </form>
           </div>
         </div>
       </div>
-
       <div class="region-footer" id="pageFooter">
         <div class="footer-container">
           <div class="footer-top">
@@ -182,33 +210,18 @@
             </div>
           </div>
           <div class="footer-bottom">
-            <div class="footer-bottom-up">
-              <a
-                href="https://about.google/?utm_source=google-UA&utm_medium=referral&utm_campaign=hp-footer&fg=1"
-                >Про Google</a
-              >
-              <a
-                href="https://www.google.com.ua/intl/uk_ua/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"
-                >Реклама</a
-              >
-              <a
-                href="https://www.google.com.ua/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1"
-                >Для бізнесу</a
-              >
-              <a href="https://google.com/search/howsearchworks/?fg=1"
-                >Як працює Пошук</a
-              >
-            </div>
-            <div class="footer-bottom-down">
-              <a href="https://policies.google.com/privacy?hl=uk&fg=1"
-                >Конфіденційність</a
-              >
-              <a href="https://policies.google.com/terms?hl=uk&fg=1">Умови</a>
-              <a href="#dropBtn" id="settings"
-                >Налаштування
-                <img src="../img/icon/Webmaster icon 32x32.png" alt="" />
-              </a>
-            </div>
+            <a
+              href="https://support.google.com/websearch/?p=ws_results_help&hl=ru-UA&fg=1"
+              >Довідка</a
+            >
+            <a href="https://policies.google.com/privacy?hl=uk&fg=1"
+              >Конфіденційність</a
+            >
+            <a href="https://policies.google.com/terms?hl=uk&fg=1">Умови</a>
+            <a href="#dropBtn" id="settings"
+              >Налаштування
+              <img src="../img/icon/Webmaster icon 32x32.png" alt="" />
+            </a>
           </div>
         </div>
       </div>
