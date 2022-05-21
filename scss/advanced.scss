@@ -355,6 +355,7 @@ li {
           }
 
           .search-form-column-right {
+            min-width: 330px;
             width: 60%;
             .column-title {
               height: 40px;
@@ -375,16 +376,8 @@ li {
                 .row-1 {
                 }
                 .row-2 {
-                  //** row-2 media query----------------------
-                  @media (max-width: 1086px) {
-                    line-height: 15px;
-                  }
                 }
                 .row-3 {
-                  //** row-3 media query----------------------
-                  @media (max-width: 1050px) {
-                    line-height: 15px;
-                  }
                 }
                 .row-4 {
                   height: 30px;
@@ -577,6 +570,7 @@ li {
       .content-search-wrapper {
         .search-form-content {
           .search-form-column-left {
+            min-width: 185px;
             .column-title {
             }
             .column-row-wrapper {
@@ -584,45 +578,72 @@ li {
               }
             }
           }
-          .search-form-field {
-            border: 1px solid #07235c;
-            background: #6f6d6d;
 
-            &:hover {
-              background: #7f5656;
-            }
-            .field-img {
-            }
-            .search-field {
-              padding: 5px;
-              color: #9a4b4b;
+          .search-form-column-middle {
+            .search-form-fields {
+              #clearField {
+              }
+              .search-field {
+                &:hover {
+                  background: #7f5656;
+                }
 
-              &:focus {
-                border: 1px solid #07235c;
-                box-shadow: 1px 2px 40px #07235c;
+                input {
+                  padding: 5px;
+                  color: #9a4b4b;
+
+                  &:focus {
+                    border: 1px solid #07235c;
+                    box-shadow: inset 1px 1px 10px #07235c;
+                  }
+                }
+              }
+              .form-field-bottom {
+                .search-field {
+                }
+                .field-bottom-between {
+                  .column-text {
+                  }
+                }
               }
             }
-            .field-img-container {
-              .field-img-links {
-                .img-link {
+            .search-form-buttons {
+              .search-form-button {
+                color: #dfc9c9;
+                background-color: #6f6d6d;
+                border: 1px solid #07235c;
+                &:hover {
+                  background-color: #7f5656;
+                  border: 1px solid #07235c;
+                  box-shadow: 1px 2px 40px #07235c;
+                  color: #dfc9c9;
+                }
+
+                &:focus {
+                  border: 1px solid #ded32a;
                 }
               }
             }
           }
-          .search-form-buttons {
-            .search-form-button {
-              color: #dfc9c9;
-              background-color: #6f6d6d;
-              border: 1px solid #07235c;
-              &:hover {
-                background-color: #7f5656;
-                border: 1px solid #07235c;
-                box-shadow: 1px 2px 40px #07235c;
-                color: #dfc9c9;
-              }
 
-              &:focus {
-                border: 1px solid #ded32a;
+          .search-form-column-right {
+            min-width: 360px;
+            .column-title {
+            }
+            .column-wrapper {
+              .column-row-wrapper {
+                .row-text {
+                }
+                .row-1 {
+                }
+                .row-2 {
+                }
+                .row-3 {
+                }
+                .row-4 {
+                }
+                .row-5 {
+                }
               }
             }
           }
@@ -676,7 +697,7 @@ li {
   background: #202124;
   .container-region-wrapper {
     .region-top {
-      .top-nav {
+      .top-up {
         .nav-dropdown {
           .dropbuton {
             &:hover {
@@ -727,72 +748,108 @@ li {
           }
         }
       }
-    }
 
-    .region-title {
-      .title-container {
-        .title-image {
-          box-shadow: 1px 1px 40px #ded32a;
+      .top-down {
+        .top-down-title {
         }
       }
     }
 
-    .region-search {
-      .search-form-container {
+    .region-content {
+      .content-search-wrapper {
         .search-form-content {
-          .search-form-field {
-            border: 1px solid #202124;
-            background: #202124;
-
-            &:hover {
-              box-shadow: 1px 1px 40px #b7ad13;
-              background-color: #202124;
-              border-bottom: 2px solid #07235c;
-              border-left: 2px solid #07235c;
+          .search-form-column-left {
+            width: 28%;
+            min-width: 200px;
+            .column-title {
+              color: #d93025;
             }
-            .field-img {
-            }
-            .search-field {
-              background: linear-gradient(
-                to right,
-                #4285f4,
-                #ea4335,
-                #fbbc05,
-                #4285f4,
-                #34a853,
-                #ea4335
-              );
-              padding: 5px;
-              color: #fff;
-
-              &:focus {
-                border: 1px solid #07235c;
-                box-shadow: 1px 2px 40px #07235c;
+            .column-row-wrapper {
+              .row-text {
+                color: #fff;
               }
             }
-            .field-img-container {
-              .field-img-links {
-                .img-link {
+          }
+
+          .search-form-column-middle {
+            .search-form-fields {
+              #clearField {
+              }
+              .search-field {
+                &:hover {
+                  // box-shadow: inset 1px 1px 40px #b7ad13;
+                }
+
+                input {
+                  border-left-color: #b7ad13;
+                  border-bottom-color: #b7ad13;
+                  background: #2b2a27;
+                  padding: 5px;
+                  color: #fff;
+
+                  &:focus {
+                    background: linear-gradient(
+                      to right,
+                      #4285f4,
+                      #ea4335,
+                      #fbbc05,
+                      #4285f4,
+                      #34a853,
+                      #ea4335
+                    );
+                    border: 1px solid #07235c;
+                  }
+                }
+              }
+              .form-field-bottom {
+                .search-field {
+                }
+                .field-bottom-between {
+                  .column-text {
+                  }
+                }
+              }
+            }
+            .search-form-buttons {
+              .search-form-button {
+                background-color: #202124;
+                border: none;
+                &:hover {
+                  background-color: #202124;
+                  border-bottom: 1px solid #b7ad13;
+                  border-left: 1px solid #b7ad13;
+                  box-shadow: 1px 1px 40px #b7ad13;
+                  color: #dfc9c9;
+                }
+
+                &:focus {
+                  border: none;
                 }
               }
             }
           }
-          .search-form-buttons {
-            .search-form-button {
-              color: #fff;
-              background-color: #202124;
-              border: 1px solid #202124;
-              border-radius: 0;
-              &:hover {
-                background-color: #202124;
-                border-bottom: 1px solid #b7ad13;
-                border-left: 1px solid #b7ad13;
-                box-shadow: 1px 1px 40px #b7ad13;
-                color: #dfc9c9;
-              }
 
-              &:focus {
-                border: none;
+          .search-form-column-right {
+            min-width: 395px;
+            width: 72%;
+            .column-title {
+              color: #d93025;
+            }
+            .column-wrapper {
+              .column-row-wrapper {
+                .row-text {
+                  color: #c8c8cf;
+                }
+                .row-1 {
+                }
+                .row-2 {
+                }
+                .row-3 {
+                }
+                .row-4 {
+                }
+                .row-5 {
+                }
               }
             }
           }
