@@ -468,6 +468,7 @@ li {
 
         @media (max-width: 490px) {
           flex-direction: column;
+          align-items: center;
         }
       }
     }
@@ -777,7 +778,6 @@ li {
               }
               .search-field {
                 &:hover {
-                  // box-shadow: inset 1px 1px 40px #b7ad13;
                 }
 
                 input {
@@ -806,6 +806,7 @@ li {
                 }
                 .field-bottom-between {
                   .column-text {
+                    color: #fff;
                   }
                 }
               }
@@ -889,18 +890,9 @@ li {
         }
       }
       .footer-bottom {
-        .footer-bottom-up {
-          //** footer-bottom-up media query----------------------
-          @media (max-width: 485px) {
-            flex-direction: column;
-          }
+        .footer-bottom-left {
         }
-        .footer-bottom-down {
-          //** footer-bottom-down media query----------------------
-          @media (max-width: 485px) {
-            flex-direction: column;
-            align-items: flex-start;
-          }
+        .footer-bottom-right {
         }
 
         a {
@@ -916,15 +908,6 @@ li {
         }
 
         img {
-          @media (max-width: 465px) {
-            width: 30px;
-          }
-        }
-
-        //** footer-bottom media query
-        @media (max-width: 485px) {
-          flex-direction: row;
-          justify-content: space-between;
         }
       }
     }
